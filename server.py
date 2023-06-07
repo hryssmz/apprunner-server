@@ -10,7 +10,7 @@ def hello_world(request: Any) -> Response:
     name = os.environ.get("NAME", None)
     if name is None or len(name) == 0:
         name = "world"
-    message = "Hello, " + name + "!\n"
+    message = "Good morning, " + name + "!\n"
     return Response(message)
 
 
